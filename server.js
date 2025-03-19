@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-app.get('/is-it-odd/api/:number', (req, res) => {
+app.get('/api/:number', (req, res) => {
     const number = parseInt(req.params.number);
 
     if (isNaN(number)) {
